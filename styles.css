@@ -4,19 +4,87 @@
     License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
     margin: 0;
     padding: 0;
     border: 0;
@@ -24,31 +92,50 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
+
 body {
     line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
     list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
     content: '';
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
 
-:root{
+:root {
     /* Color Theme from Adobe Color */
     --lt-gray: #F2F2F0;
     --mint: #CCD9BF;
@@ -88,7 +175,7 @@ table {
     TO DO: BEGIN WORK ON LINE 280
     Most of the page styles have been written for you, but we will complete the styles for the page using flexbox and grid
 --------------------- */
-body{
+body {
     font-family: var(--body-fonts);
     color: var(--dk-gray);
     background-color: var(--sage-rgba);
@@ -102,7 +189,7 @@ body{
 }
 
 /* Skip Link Styles */
-#skip{
+#skip {
     position: absolute;
     top: auto;
     left: -10000px;
@@ -111,7 +198,7 @@ body{
     overflow: hidden;
 }
 
-#skip:focus{
+#skip:focus {
     position: static;
     display: block;
     padding: 1rem;
@@ -127,13 +214,16 @@ body{
 }
 
 /* Header, Main, Footer */
-header, main, footer{
+header,
+main,
+footer {
     width: 100%;
     margin: 0 auto;
 }
 
 /* Header and Footer Only */
-header, footer{
+header,
+footer {
     width: calc(100% - 32px);
     max-width: 1248px;
     padding: 32px 16px;
@@ -141,7 +231,10 @@ header, footer{
 }
 
 /* For All Headings */
-h1, h2, h3, h4{
+h1,
+h2,
+h3,
+h4 {
     font-weight: 800;
     color: var(--forest);
     font-family: var(--heading-fonts);
@@ -149,29 +242,29 @@ h1, h2, h3, h4{
 }
 
 /* h1 Headings */
-h1{
+h1 {
     font-size: 3rem;
     margin: 1rem 0 2rem;
     text-align: center;
 }
 
 /* The Link in the h1 */
-h1 a{
+h1 a {
     text-decoration: none;
     color: var(--forest);
 }
 
 /* Link in the h1 on Hover/Focus */
-h1 a:hover{
+h1 a:hover {
     text-decoration: underline;
 }
 
-h1 a:focus{
+h1 a:focus {
     outline: 4px solid var(--forest);
 }
 
 /* h2 Headings */
-h2{
+h2 {
     color: var(--wht);
     text-align: center;
     font-size: 2.25rem;
@@ -179,27 +272,27 @@ h2{
 }
 
 /* h3 Headings */
-h3{
+h3 {
     text-align: center;
     font-size: 2rem;
     margin: 1rem 0;
 }
 
 /* h4 Headings */
-h4{
+h4 {
     text-align: center;
     font-size: 1.85rem;
     margin: 1rem 0;
 }
 
 /* Navigation */
-nav{
+nav {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
 }
 
-nav a{
+nav a {
     display: block;
     font-size: 2rem;
     padding: 1rem;
@@ -213,39 +306,39 @@ nav a{
     color: var(--wht);
 }
 
-nav a svg{
+nav a svg {
     display: none;
 }
 
-nav a:hover{
+nav a:hover {
     background-color: var(--sage);
     color: var(--dk-gray);
 }
 
-nav a:focus{
+nav a:focus {
     outline: 4px solid var(--sage);
     outline-offset: 2px;
 }
 
 /* Links */
-a{
+a {
     color: var(--leaf);
 }
 
 /* Link Hover Styles */
-a:hover{
+a:hover {
     color: var(--forest);
     text-decoration: none;
 }
 
 /* Link Focus Styles */
-a:focus{
+a:focus {
     outline-color: var(--forest);
     outline-offset: 4px;
 }
 
 /* Main Styles */
-main{
+main {
     background-color: var(--forest);
     width: 100%;
     max-width: 1280px;
@@ -253,7 +346,7 @@ main{
 }
 
 /* Paragraphs in the Main (Direct Descendants Only) */
-main > p{
+main>p {
     color: var(--wht);
     font-size: 1.25rem;
     padding: 1rem;
@@ -261,12 +354,12 @@ main > p{
     margin-bottom: 2rem;
 }
 
-main > section{
+main>section {
     padding: 16px;
 }
 
 /* Text */
-p{
+p {
     width: 100%;
     max-width: 65ch;
     margin: 0 auto;
@@ -274,27 +367,29 @@ p{
 }
 
 /* Plants Section */
-#plants{
+#plants {
     background-color: var(--wht);
     padding-bottom: 3rem;
 }
 
-#plants section{
+#plants section {
     /* TO DO: Make these flex containers that flow in the column direction, do not allow wrapping, and justify the content with space between the elements */
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 32px auto 0;
     max-width: 384px;
 }
 
-#plants img{
+#plants img {
     /* TO DO: Use flexbox here to make the images in these sections appear before the headings */
-    
+    order: -1;
     width: 100%;
     max-width: 400px;
     height: auto;
 }
 
-.price{
+.price {
     font-weight: 600;
     text-align: center;
     font-size: 1.5rem;
@@ -305,59 +400,66 @@ p{
 }
 
 /* Contact Section */
-#contact{
+#contact {
     color: var(--wht);
 }
 
 /* Contact text color */
-#contact h3, #contact h4, #contact a, #contact label, #contact address{
+#contact h3,
+#contact h4,
+#contact a,
+#contact label,
+#contact address {
     color: var(--wht);
 }
 
 /* Contact Links */
-#contact a{
+#contact a {
     display: block;
     padding: 10px 0;
 }
 
-#contact > div, #contact > section{
+#contact>div,
+#contact>section {
     margin-top: 32px;
 }
 
-#contact div h4, #contact div caption, #contact #social h4{
+#contact div h4,
+#contact div caption,
+#contact #social h4 {
     margin-top: 48px;
 }
 
-#contact h4:first-of-type{
+#contact h4:first-of-type {
     margin-bottom: 8px;
     margin-top: 0;
 }
 
 /* Address */
-address{
+address {
     width: fit-content;
     margin: 0 auto;
     font-style: normal;
 }
 
 /* Address Anchors On Hover */
-address a:hover{
+address a:hover {
     text-decoration: none;
 }
 
-address a:focus{
+address a:focus {
     outline-offset: 2px;
 }
 
 /* Contact Table */
-table{
+table {
     width: fit-content;
     border-collapse: collapse;
     margin: 0 auto;
 }
 
 /* Contact Caption */
-caption{
+caption {
     font-size: 1.75rem;
     text-align: center;
     margin: 0;
@@ -367,65 +469,69 @@ caption{
 }
 
 /* Other Table Styles */
-th{
+th {
     font-size: 1.35rem;
     font-weight: 600;
 }
 
-th, td{
+th,
+td {
     border-bottom: 2px solid var(--wht);
     padding: 10px 4px 4px 4px;
 }
 
-th:nth-of-type(even), td:nth-of-type(even){
+th:nth-of-type(even),
+td:nth-of-type(even) {
     padding-left: 0;
 }
 
 /* Social Media Section */
-#social{
+#social {
     width: fit-content;
     margin: 32px auto;
 }
 
 /* Social Media List */
-#social ul{
+#social ul {
     /* TO DO: Make this a grid container with three equal columns and a 16 pixel gap */
-    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
     width: fit-content;
     margin: 16px auto 32px;
 }
 
 /* Heading for Social Media Section */
-#social h4{
+#social h4 {
     /* TO DO: Make this heading span all of the columns in its grid container */
-    
+    grid-column: 1/-1;
 }
 
-#social a{
+#social a {
     display: block;
     padding: 8px 12px 0 12px;
 }
 
 /* Social Media Icons */
-#social svg{
+#social svg {
     stroke: var(--wht);
 }
 
 /* Social Media Icons on Hover */
-#social a:hover svg{
+#social a:hover svg {
     fill: var(--wht);
     stroke: var(--forest);
 
 }
 
 /* Social Media Icons on Focus */
-#social a:focus{
+#social a:focus {
     outline: 2px solid var(--mint);
     outline-offset: 2px;
 }
 
 /* Spans to Mark Required Form Inputs */
-.required svg{
+.required svg {
     display: inline-block;
     padding-left: 4px;
     stroke: var(--mint);
@@ -434,26 +540,29 @@ th:nth-of-type(even), td:nth-of-type(even){
 }
 
 /* Form */
-form{
+form {
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
 }
 
 /* Form Labels/Widgets */
-label, input, textarea{
+label,
+input,
+textarea {
     display: block;
     font-size: 1.25rem;
     width: calc(100% - 10px);
 }
 
 /* Labels */
-label{
+label {
     margin: 12px 0 8px 0;
     font-size: 1.5rem;
 }
 
-input, textarea{
+input,
+textarea {
     border: none;
     background: var(--mint);
     padding: 0 4px;
@@ -463,19 +572,22 @@ input, textarea{
     font-family: var(--body-fonts);
 }
 
-textarea{
+textarea {
     height: 8rem;
     padding: 8px 4px;
 }
 
-input:focus, input:focus-visible, textarea:focus, textarea:focus-visible{
+input:focus,
+input:focus-visible,
+textarea:focus,
+textarea:focus-visible {
     outline: 2px solid var(--wht);
     outline-offset: 2px;
     background-color: var(--forest);
     color: var(--wht);
 }
 
-#feedback{
+#feedback {
     margin: 48px auto 32px;
     width: 100%;
     height: auto;
@@ -486,14 +598,15 @@ input:focus, input:focus-visible, textarea:focus, textarea:focus-visible{
     border: 4px solid var(--mint);
 }
 
-#feedback:hover, #feedback:focus{
+#feedback:hover,
+#feedback:focus {
     background-color: var(--forest);
     color: var(--wht);
     outline: none;
 }
 
 /* Plant-Row Div */
-#plant-row{
+#plant-row {
     width: 100%;
     max-width: 1280px;
     margin: 0 auto;
@@ -507,7 +620,7 @@ input:focus, input:focus-visible, textarea:focus, textarea:focus-visible{
 }
 
 /* Back to Top of Page Link */
-#btt{
+#btt {
     display: block;
     line-height: 0;
     padding: 10px;
@@ -519,96 +632,109 @@ input:focus, input:focus-visible, textarea:focus, textarea:focus-visible{
     border: 2px solid var(--wht);
 }
 
-#btt svg{
+#btt svg {
     stroke: var(--wht);
     transition: all 300ms;
 }
 
-#btt:hover{
+#btt:hover {
     padding: 10px;
 }
 
-#btt:hover svg, #btt:focus svg{
+#btt:hover svg,
+#btt:focus svg {
     transform: scale(1.5);
 }
 
-#btt:focus{
+#btt:focus {
     outline: 4px solid var(--leaf);
     outline-offset: 4px;
 }
 
 /* Footer */
-footer{
+footer {
     text-align: center;
 }
 
 /* Media Queries */
-@media screen and (min-width: 500px){
-    nav ul{
+@media screen and (min-width: 500px) {
+    nav ul {
         width: 100%;
         /* TO DO: Convert the unordered list in the navigation to a flex container with space between the items */
-        
+        display: flex;
+        justify-content: space-between;
     }
 
-    nav li{
+    nav li {
         /* TO DO: Give each of these a flex basis of 30% */
-        
+        flex-basis: 30%;
     }
 
-    nav a{
+    nav a {
         margin: 0;
     }
 }
 
-@media screen and (min-width: 700px){
-    #plants{
+@media screen and (min-width: 700px) {
+    #plants {
         /* TO DO: Make this a flex container that allows wrapping, has a 1rem gap, and justifies the content to the center */
-        
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
     }
 
-    #plants h3, #plants p{
+    #plants h3,
+    #plants p {
         /* TO DO: Give these two elements a flex basis of 100% so they fill the container width */
-        
+        flex-basis: 100%;
     }
 
-    #plants section{
+    #plants section {
         /* TO DO: Give these sections each a flex basis of 45% */
-        
+        flex-basis: 45%;
     }
 
-    #plants .price{
+    #plants .price {
         /* TO DO: Give each of these elements a flx basis of 25% to ensure that they are all the same height */
-        
+        flex-basis: 25%;
     }
 
-    #contact > div{
+    #contact>div {
         /* TO DO: Make this a grid container with the first column being 1 fr and the second being 1.5 fr  and two rows that will size automatically. Include a 1rem gap and align the items to the start */
-        
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        grid-template-rows: auto auto;
+        gap: 1rem;
+        align-items: start;
     }
 
-    #contact div > section{
+    #contact div>section {
         /* TO DO: Ensure that this container only displays in the first column of its grid parent */
-        
+        grid-column: 1/2;
         margin-top: 0;
     }
 
-    #contact div table{
+    #contact div table {
         /* TO DO: Place this table in the second column and tell it to span two rows */
-        
+        grid-column: 2/3;
+        grid-row: 1/3;
     }
 
-    #contact div caption{
+    #contact div caption {
         margin-top: 0;
     }
 
-    th:nth-of-type(even), td:nth-of-type(even){
+    th:nth-of-type(even),
+    td:nth-of-type(even) {
         padding-left: 12px;
     }
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 900px) {
+
     /* Header Styles */
-    header{
+    header {
         height: 600px;
         background-color: var(--wht);
         background-image: url("images/plants-on-table-narrow.jpg");
@@ -618,10 +744,12 @@ footer{
         background-position: right;
         background-size: contain;
         /* TO DO: Make this a flex container that flows in the column direction and justifies the items with space around them */
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
-    h1{
+    h1 {
         text-align: left;
         font-size: 7rem;
         width: 515px;
@@ -629,40 +757,41 @@ footer{
     }
 
     /* h2 Headings */
-    h2{
+    h2 {
         font-size: 4rem;
         margin: 96px 0 0 0;
     }
 
     /* h3 Headings */
-    h3{
+    h3 {
         font-size: 3.5rem;
         margin: 8px;
     }
 
     /* h4 Headings */
-    h4{
+    h4 {
         font-size: 2.5rem;
         margin: 0;
     }
 
-    nav{
+    nav {
         margin-left: 4rem;
         position: relative;
     }
 
-    nav ul{
+    nav ul {
         /* TO DO: Make this into a flex container */
-        
+        display: flex;
+
     }
 
-    nav a{
+    nav a {
         font-size: 2.5rem;
         background-color: transparent;
         color: var(--leaf);
     }
 
-    nav a svg{
+    nav a svg {
         display: block;
         width: 200px;
         height: 200px;
@@ -673,101 +802,113 @@ footer{
         z-index: 0;
     }
 
-    nav a span{
+    nav a span {
         display: block;
         position: relative;
         top: -140px;
         z-index: 1;
     }
 
-    nav a:hover{
+    nav a:hover {
         background-color: transparent;
     }
 
-    nav a:hover svg, nav a:focus svg{
+    nav a:hover svg,
+    nav a:focus svg {
         transform: scale(1.25) rotate(320deg);
     }
 
-    main > section{
+    main>section {
         padding: 32px;
     }
 
     /* Paragraphs in the Main (Direct Descendants Only) */
-    main > p{
+    main>p {
         margin-bottom: 96px;
         font-size: 1.5rem;
     }
 
     /* Plants Section */
-    #plants{
+    #plants {
         padding: 96px 32px;
         /* TO DO: Make this a grid container with three equal rows, then give it an 8 pixel row gap and a 32 pixel column gap */
-        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px 32px;
     }
 
-    #plants h3, #plants > p{
+    #plants h3,
+    #plants>p {
         /* TO DO: Make these elements span all of the columns in their parent containers */
-        
+        grid-column: 1/-1;
     }
 
-    #plants section{
+    #plants section {
         /* TO DO: Make these flex containers that flow in the column direction, justify with space between the elements */
-        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         margin: 32px auto 0;
     }
 
-    #plants .price{
+    #plants .price {
         /* TO DO: Assign these a flex basis of 20% so that they are all the same height */
-        
+        flex-basis: 20%;
     }
 
     /* Contact Section */
-    #contact{
+    #contact {
         padding: 64px 32px;
         /* TO DO: Make this a grid container with two equally sized columns, a 16 pixel row gap and a 32 pixel column gap */
-        
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px 32px;
     }
 
     /* Contact Heading and Paragraph */
-    #contact h3, #contact > p{
+    #contact h3,
+    #contact>p {
         /* TO DO: Use grid to make these elements span all of the columns in their container */
-        
+        grid-column: 1/-1;
     }
 
-    #contact > div{
+    #contact>div {
         display: block;
     }
 
-    #contact h4, #contact div caption{
+    #contact h4,
+    #contact div caption {
         margin-top: 32px;
     }
 
-    #contact a{
+    #contact a {
         padding: 4px 0;
     }
 
     /* Contact Caption */
-    caption{
+    caption {
         font-size: 2.5rem;
     }
 
     /* Other Table Styles */
-    th{
+    th {
         font-size: 1.5rem;
     }
 
-    th, td{
+    th,
+    td {
         border-bottom: 2px solid var(--wht);
         padding: 10px 4px 4px 4px;
     }
 
-    th:nth-of-type(even), td:nth-of-type(even){
+    th:nth-of-type(even),
+    td:nth-of-type(even) {
         padding-left: 24px;
     }
 }
 
-@media screen and (min-width: 1100px){
-    header{
+@media screen and (min-width: 1100px) {
+    header {
         background-image: url("images/plants-on-table-wide.jpg");
     }
 }
